@@ -1,3 +1,11 @@
+// Loading Screen
+window.addEventListener('load', () => {
+    const loadingScreen = document.getElementById('loading-screen');
+    setTimeout(() => {
+        loadingScreen.classList.add('fade-out');
+    }, 2800); // 5個のりんごが光り終わった後にフェードアウト
+});
+
 // Mobile Navigation
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
