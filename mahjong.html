@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>麻雀学習ゲーム - Kanon's Portfolio</title>
+    <link rel="icon" href="images/icon_shimaenaga.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="images/icon_shimaenaga.png" alt="icon" class="nav-icon">MyPortfolio</a>
+            <ul class="nav-menu">
+                <li><img src="images/birds.gif" alt="birds" class="nav-birds-left"></li>
+                <li><a href="index.html#home">HOME</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="index.html#products">PRODUCTS</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+                <li><img src="images/birds_huwahuwa.png" alt="birds" class="nav-birds"></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-detail-header">
+                <a href="index.html" class="back-home-btn"><i class="fas fa-arrow-left"></i> Home</a>
+            </div>
+            <div class="product-detail-content">
+                <div class="product-detail-text">
+                    <h1 class="product-detail-title">麻雀学習ゲーム</h1>
+                    <p class="product-detail-subtitle">AIが最適な打牌をレコメンドする麻雀練習アプリ</p>
+                    <div class="tech-badges">
+                        <span class="tech-badge"><img src="images/icon-unity.png" alt="Unity">Unity</span>
+                        <span class="tech-badge"><img src="images/icon-c.png" alt="C#">C#</span>
+                    </div>
+                </div>
+                <div class="product-detail-image">
+                    <img src="images/mahjong.png" alt="麻雀学習ゲーム">
+                </div>
+            </div>
+
+            <div class="product-detail-info">
+                <table class="detail-table">
+                    <tr><th>GitHub</th><td><a href="https://github.com/kanon261/unity_-mahjong-game" target="_blank">kanon261/unity_-mahjong-game</a></td></tr>
+                    <tr><th>使用技術</th><td>Unity, C#</td></tr>
+                    <tr><th>対応OS</th><td>Windows, macOS</td></tr>
+                    <tr><th>制作人数</th><td>1名（個人開発）</td></tr>
+                    <tr><th>制作時期</th><td>2026.01</td></tr>
+                </table>
+
+                <div class="detail-section">
+                    <h3>プロジェクト概要</h3>
+                    <p>初心者向けの麻雀学習アプリケーション。AIによるレコメンドシステムを搭載し、牌効率を練習することができる。</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>目的</h3>
+                    <p>麻雀ゲームを制作しようと考えた理由は、AIを組み込んだプログラムを実際に作ってみたかったからである。本来は機械学習を用いたAIの実装に挑戦したかったが、制作期間の制約から十分な検証や学習を行う時間を確保できなかった。そのため、今回はルールベースAIを採用し、麻雀の打牌ロジックを設計・実装することに注力した。</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>実装済み機能</h3>
+                    <ul>
+                        <li>基本的なゲームフロー（配牌、ツモ、打牌）</li>
+                        <li>AIによる最適打牌のハイライト表示</li>
+                        <li>和了判定</li>
+                        <li>流局判定</li>
+                    </ul>
+                </div>
+
+                <div class="detail-section">
+                    <h3>アーキテクチャ</h3>
+                    <p>コードベースは2層構造で設計されている：</p>
+                    <ul>
+                        <li><strong>Core層：</strong>ゲームロジックとAI（Unity非依存）</li>
+                        <li><strong>Engine層：</strong>UIとゲーム進行（Unity依存）</li>
+                    </ul>
+                </div>
+
+                <div class="detail-section">
+                    <h3>AIシステム</h3>
+                    <p>レコメンドエンジンはルールベースのロジックを使用し、以下の2つの基準で評価を行う：</p>
+                    <ul>
+                        <li><strong>シャンテン数：</strong>和了までの距離</li>
+                        <li><strong>受け入れ枚数：</strong>進行可能な有効牌の数</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <p>MyPortfolio</p>
+                    <p class="footer-subtitle">- BabaKanon's Products -</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/non2u._.u/" target="_blank" aria-label="Instagram"><img src="images/insta_cat.jpg" alt="Instagram"></a>
+                    <a href="https://x.com/z8it44iz48630" target="_blank" aria-label="X (Twitter)"><img src="images/icon_x.jpg" alt="X"></a>
+                    <a href="https://github.com/kanon261" target="_blank" aria-label="GitHub"><img src="images/icon_github.jpg" alt="GitHub"></a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2025 BabaKanon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
