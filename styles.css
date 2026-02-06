@@ -563,6 +563,23 @@ h1, h2, h3 {
     color: var(--text-light);
 }
 
+.credits {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--text-light);
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+.credits a {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.credits a:hover {
+    text-decoration: underline;
+}
+
 /* Modal */
 .modal {
     display: none;
